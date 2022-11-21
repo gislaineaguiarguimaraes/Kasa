@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin: 40px 100px;   
+}
+
+.navbar img{
+ width: 200px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.item{
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 40px;    
+}
+
+.item a{
+    color:#FF6060;
+    text-decoration: none;
+}
+
+.item a:hover{
+    text-decoration: underline;
+}
