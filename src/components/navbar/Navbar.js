@@ -5,10 +5,11 @@ import styles from './Navbar.module.css'
 import logo from '../../images/logo.svg'
 function Navbar() {
     return(
-        <Container>
-            <nav className={styles.navbar}>
-                {/*Le logo sera un lien vers la page principale */}
-                <Link to="/">
+        
+        <nav className={styles.navbar}>
+            <Container>
+                  {/*Le logo sera un lien vers la page principale */}
+                  <Link to="/">
                     <img src={logo} alt="Logo Kasa"></img>
                 </Link>
                 <ul className={styles.list}>
@@ -19,8 +20,10 @@ function Navbar() {
                         <Link to="/about">A propos</Link>
                     </li>
                 </ul>
-            </nav>
-        </Container>   
+
+            </Container>
+        </nav>
+           
     )
 }
 export default Navbar

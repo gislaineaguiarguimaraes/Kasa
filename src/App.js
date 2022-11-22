@@ -9,6 +9,7 @@ import Lodging from './pages/Lodging'
 import Error from './pages/Error'
 //Importer les composants statiques (Navbar/Footer)
 import Navbar from './components/navbar/Navbar.js'
+import Footer from './components/footer/Footer.js'
 
 
 function App() {
@@ -17,14 +18,15 @@ function App() {
       {/*Englober l'intégralité du projet dans le Routeur */}
       <Router>
         <Navbar/>
-        <Container>
+        <Container customClass="min_height">
           <Routes>
             <Route path = "/" exact element= {<Home/>} />  
             <Route path = "/about" element= {<About/>} />  
             <Route path = "/lodging" element= {<Lodging/>} />  
-            <Route path = "/error" element= {<Error/>} />  
+            <Route path = "*" element= {<Error/>} />  
           </Routes>
         </Container>
+        <Footer/>
 
       </Router>
     </div>

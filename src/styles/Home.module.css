@@ -1,0 +1,11 @@
+.lodging_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.section_lodging_list{
+    background: #F7F7F7;
+    border-radius: 25px;
+}

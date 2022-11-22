@@ -1,8 +1,7 @@
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    margin: 40px 100px;   
+    
+    padding: 40px ; 
+    margin: 0 100px; 
 }
 
 .navbar img{

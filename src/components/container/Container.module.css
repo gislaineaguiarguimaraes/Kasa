@@ -1,4 +1,9 @@
 .container{
-    max-width: 1440px;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  
+}
+
+.min_height{
+    min-height: 85vh;
 }
