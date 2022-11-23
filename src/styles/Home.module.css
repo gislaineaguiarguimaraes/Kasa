@@ -1,11 +1,12 @@
-.lodging_list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.section_lodging_list{
+.section_lodging{
+    max-width: 1240px;
     background: #F7F7F7;
     border-radius: 25px;
+    padding: 20px;
+}
+
+.lodging_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }

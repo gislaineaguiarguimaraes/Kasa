@@ -2,7 +2,7 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 30px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
 }
@@ -12,11 +12,13 @@
     height: 340px;
     border-radius: 10px;
     position: absolute;
+    object-fit: cover;
+    
 }
 
 .lodging_item p{
     position: relative;
-    top: 290px;
+    top: 270px;
     left: 10px;
     font-size: 18px;
     font-weight: 500;

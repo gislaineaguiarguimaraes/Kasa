@@ -1,8 +1,8 @@
 //<Link> est utilisé pour définir l'URL et garder une trace de l'historique de navigation. Pour établir un lien vers un chemin interne, nous utiliserons <Link> a la  place de <a href="">.
 import {Link} from 'react-router-dom'
-import Container from '../container/Container'
-import styles from './Navbar.module.css'
-import logo from '../../images/logo.svg'
+import Container from './Container'
+import styles from '../styles/Navbar.module.css'
+import logo from '../images/logo.svg'
 function Navbar() {
     return(
         

@@ -1,0 +1,37 @@
+/*Style global pour toutes les div background*/
+.divBackground {
+    width: 1240px;
+    height: 223px;
+    margin: 40px 0;
+    background-color: #000000;
+    border-radius: 26px; 
+}
+
+/*Image background de la page d'accueil*/
+.imgBackgroundHome{
+    position: relative;
+    background: url('../images/imgBackgroundHome.png');
+    /*opacity: 0.3;*/  
+}
+
+.imgBackgroundHome::after {
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    content: "Chez vous, partout et ailleurs";
+    font-size: 45px;
+    font-weight: 500;
+    color:#ffff;
+}
+
+/*Image background de la page à propos*/
+.imgBackgroundAbout{
+    background: url('../images/imgBackgroundAbout.png');
+    /*opacity: 0.3;*/  
+}
+
+/*Image background de la page logement*/
+.imgBackgroundLodging{
+    background: url('../images/imgBackgroundLodging.png');
+    /*opacity: 0.3;*/  
+}

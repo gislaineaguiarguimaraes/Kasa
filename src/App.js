@@ -1,15 +1,15 @@
 //Importer react-router-dom pour créer et relier les routes
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-import Container from './components/container/Container.js'
+import Container from './components/Container'
 //Importer toutes les pages du site
 import Home from './pages/Home'
 import About from './pages/About'
 import Lodging from './pages/Lodging'
 import Error from './pages/Error'
 //Importer les composants statiques (Navbar/Footer)
-import Navbar from './components/navbar/Navbar.js'
-import Footer from './components/footer/Footer.js'
+import Navbar from './components/Navbar.js'
+import Footer from './components/Footer.js'
 
 
 function App() {
