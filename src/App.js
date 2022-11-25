@@ -27,10 +27,9 @@ function App() {
           </Routes>
         </Container>
         <Footer/>
-
       </Router>
     </div>
-  );
+  )
 }
 
 export default App;

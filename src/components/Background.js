@@ -1,4 +1,4 @@
-import styles from '../styles/Background.module.css'
+import styles from '../styles/components/Background.module.css'
 
 function Background(props) {
     return(

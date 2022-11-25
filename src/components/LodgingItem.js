@@ -1,5 +1,5 @@
 //Fonction pour créer chaque card de chaque logement. Cette function sera appelé dans la poge home
-import styles from '../styles/LodgingItem.module.css'
+import styles from '../styles/components/LodgingItem.module.css'
 //La fonction recevra les props du fichier Home.js
 function LodgingItem({id,cover, title}){
     return(

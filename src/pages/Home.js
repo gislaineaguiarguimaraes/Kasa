@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/pages/Home.module.css'
 import {lodgingList} from '../datas/lodgingList'
 import LodgingItem from '../components/LodgingItem'
 import Background from '../components/Background'
