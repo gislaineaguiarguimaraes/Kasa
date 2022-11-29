@@ -21,6 +21,10 @@
     margin: 180px 0;
     font-size: 18px;
     font-weight: 500;
-    
     color:#FF6060;
+    text-decoration: none;
+}
+
+.error a:hover {
+    text-decoration: underline;
 }

@@ -1,33 +1,46 @@
-.dropDown {
+.coll_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    width: 1023px;
+    width: 1024px;
     height: 47px;
-    background: #FF6060;
     border-radius: 5px;
-    margin: 10px;
+    margin-top: 20px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #FF6060;
 }
 
-.dropDown h2{
+
+.coll_content {
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0px rgba(15, 15, 15, 0.2);
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    background: #F7F7F7;
     color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-    margin: 20px;
+    max-width: 1024px;
+    transition-property: max-height;
+    transition: all 10s ease-in;
 }
 
-.dropDown img{
-    margin-right: 20px;
-}
-
-.dropDown p{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #F6F6F6;
+.coll_item {
     color: #FF6060;
     font-size: 24px;
 }
 
+/*END*/
+.menu_arrow_down {
+transform: rotate(0deg);
+transition: all 6s linear;
+}
+
+.menu_arrow_open {
+transform: rotate(180deg);
+transition: all 6s linear;
+}
