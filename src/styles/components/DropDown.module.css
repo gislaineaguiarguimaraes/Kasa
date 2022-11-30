@@ -17,7 +17,7 @@
 .coll_content {
     padding: 20px;
     box-shadow: 0px 0px 4px 0px rgba(15, 15, 15, 0.2);
-    margin-top: -5px;
+    margin-top: -2px;
     display: flex;
     flex-direction: column;
     justify-self: center;

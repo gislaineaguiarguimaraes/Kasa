@@ -4,6 +4,7 @@
     height: 223px;
     margin-bottom: 40px;
     border-radius: 26px; 
+    box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.349);
 }
 
 .imgBackgroundBlack{
@@ -17,8 +18,7 @@
 /*Image background de la page d'accueil*/
 .imgBackgroundHome{
     position: relative;
-    background: url('../../images/imgBackgroundHome.png');
-      
+    background: url('../../images/imgBackgroundHome.png');      
 }
 
 .imgBackgroundHome::after{
@@ -40,4 +40,27 @@
 /*Image background de la page logement*/
 .imgBackgroundLodging{
     background: url('../../images/imgBackgroundLodging.png'); 
+}
+
+@media (max-width: 375px) {
+    .divBackground {
+        max-width: 335px;
+        max-height: 111px;
+        margin-bottom: 20px;
+        border-radius: 10px; 
+    }
+    .imgBackgroundBlack{
+        border-radius: 10px;   
+    } 
+    .imgBackgroundHome{
+        background: url('../../images/imgBackgroundHomeMobile.png');
+    }
+    .imgBackgroundHome::after{
+        font-size: 24px; 
+        top:20%; 
+        text-align: start;
+        margin:15px;
+        content: "Chez vous, \A partout et ailleurs";
+        white-space: pre-wrap;
+    }
 }

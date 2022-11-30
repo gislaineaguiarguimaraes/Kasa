@@ -1,12 +1,25 @@
 .section_lodging{
     max-width: 1240px;
-    background: #F7F7F7;
+    margin: auto;
+    background-color: #F7F7F7;
+    box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.349);
     border-radius: 25px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .lodging_list{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+}
+
+@media (max-width: 375px) {
+    .section_lodging{
+        width: 335px;
+        padding: 0;
+        background-color:#FFFFFF;
+        box-shadow: none;
+    } 
 }

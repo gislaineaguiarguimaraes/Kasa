@@ -5,6 +5,7 @@ function Card({id,cover, title}){
     return(
         //Et retournera une liste avec une image et le titre.
         <li key={id} className={styles.lodging_item}>
+            {console.log(id)}
             <img src={cover} alt={`${title} cover`}/>
             <p>{title}</p>
         </li>

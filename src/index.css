@@ -13,12 +13,13 @@ html, body{
   margin: 0 auto;
   background-color:#FFFFFF;
   max-width: 1440px;
-  height: 100vh;
-
-   /*@media(min-width: ;){
-
-    }
-    @media(min-width: ;){
-
-    }*/
+  height: 100vh; 
+}
+@media (max-width: 375px) {
+  #root{
+    margin: 0 auto;
+    width: 375px;
+    height: 100%; 
+    
+  }
 }

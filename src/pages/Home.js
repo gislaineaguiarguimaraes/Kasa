@@ -11,13 +11,13 @@ function Home() {
             <Background customClass="imgBackgroundHome"/>
             <section className={styles.section_lodging}>
                 <ul className={styles.lodging_list}>
-                {lodgingList.map(({ id, cover, title }) => (
-                                    <Card
-                                        id={id}
-                                        cover={cover}
-                                        title={title}
-                                    />
-                                ))}
+                    {lodgingList.map(({ id, cover, title }) => (
+                        <Card
+                            id={id}
+                            cover={cover}
+                            title={title}
+                        />
+                    ))}
                 </ul>
             </section>
         </Container>

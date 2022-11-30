@@ -27,3 +27,24 @@
 .item a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 375px) {
+    .navbar{
+        padding: 0; 
+        margin: 10px; 
+    }
+    .lodging_item{
+        max-width: 335px;
+        margin:0;
+    }
+    
+    .navbar img{
+        width: 145px;
+        
+    }
+    .item{
+        font-weight: 500;
+        font-size: 12px;
+        margin-right: 10px;    
+    }
+}
