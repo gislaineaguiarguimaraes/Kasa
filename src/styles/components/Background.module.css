@@ -1,7 +1,6 @@
 /*Style global pour toutes les div background*/
 .divBackground {
     width: 1240px;
-    height: 223px;
     margin-bottom: 40px;
     border-radius: 26px; 
     box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.349);
@@ -17,6 +16,7 @@
 
 /*Image background de la page d'accueil*/
 .imgBackgroundHome{
+    height: 223px;
     position: relative;
     background: url('../../images/imgBackgroundHome.png');      
 }
@@ -34,7 +34,8 @@
 
 /*Image background de la page à propos*/
 .imgBackgroundAbout{
-    background: url('../../images/imgBackgroundAbout.png');   
+    height: 223px;
+    background-image: url('../../images/imgBackgroundAbout.png');   
 }
 
 /*Image background de la page logement*/
@@ -42,10 +43,10 @@
     background: url('../../images/imgBackgroundLodging.png'); 
 }
 
+
 @media (max-width: 375px) {
     .divBackground {
         max-width: 335px;
-        max-height: 111px;
         margin-bottom: 20px;
         border-radius: 10px; 
     }
@@ -53,6 +54,7 @@
         border-radius: 10px;   
     } 
     .imgBackgroundHome{
+        max-height: 111px;
         background: url('../../images/imgBackgroundHomeMobile.png');
     }
     .imgBackgroundHome::after{
@@ -62,5 +64,9 @@
         margin:15px;
         content: "Chez vous, \A partout et ailleurs";
         white-space: pre-wrap;
+    }
+    .imgBackgroundAbout{
+        height: 223px;
+        background: url('../../images/imgBackgroundAboutMobile.png');   
     }
 }

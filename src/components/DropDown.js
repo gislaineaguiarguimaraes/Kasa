@@ -2,7 +2,6 @@
 import {useState} from 'react'
 import styles from '../styles/components/DropDown.module.css'
 import vector from '../images/vector.png'
-import Container from './Container'
 
 function DropDown({title, text}) {
     //Fonction pour suivre le changement d'état du menu déroulant (ouverture et fermeture)
@@ -24,16 +23,15 @@ function DropDown({title, text}) {
         
     }
     return(
-        <Container customClass="column" >
+        <article className={styles.divArticle} >
             <div className={styles.coll_header} onClick={handleClick}>
-                <h3>{title}</h3>
+                <p>{title}</p>
                 <Arrow/>
             </div>
             <div className={styles.coll_content} style={{display:display}}>
                 <p className={styles.coll_item}>{text}</p>
             </div>
-
-        </Container>
+        </article>
     )  
 }
 

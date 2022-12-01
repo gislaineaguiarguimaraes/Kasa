@@ -4,17 +4,19 @@
     align-items: center;
     width: 1024px;
     height: 47px;
+    background-color: #FF6060;
     border-radius: 5px;
     margin-top: 20px;
     padding: 8px;
     color: white;
     cursor: pointer;
-    font-size: 16px;
-    background-color: #FF6060;
+    font-size: 26px;
+    font-weight: 500;  
 }
 
 
 .coll_content {
+    max-width: 1024px;
     padding: 20px;
     box-shadow: 0px 0px 4px 0px rgba(15, 15, 15, 0.2);
     margin-top: -2px;
@@ -23,8 +25,6 @@
     justify-self: center;
     align-self: center;
     background: #F7F7F7;
-    color: #fff;
-    max-width: 1024px;
     transition-property: max-height;
     transition: all 10s ease-in;
 }
@@ -34,7 +34,6 @@
     font-size: 24px;
 }
 
-/*END*/
 .menu_arrow_down {
 transform: rotate(0deg);
 transition: all 6s linear;
@@ -43,4 +42,22 @@ transition: all 6s linear;
 .menu_arrow_open {
 transform: rotate(180deg);
 transition: all 6s linear;
+}
+/*END*/
+@media (max-width: 375px) {
+    .coll_header {
+        width: 335px;
+        height: 30px;
+        margin-top: 25px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    .coll_content {
+        background: #f6f6f6;
+        padding: 5px;
+    }
+    .coll_item {
+        font-size: 12px;
+        margin: 20px 0 50px 15px;
+    }
 }

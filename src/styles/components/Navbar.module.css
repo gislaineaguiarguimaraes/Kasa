@@ -1,6 +1,9 @@
 .navbar{
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
     padding: 40px ; 
-    margin: 0 100px; 
+    margin: 20px auto; 
 }
 
 .navbar img{
@@ -31,11 +34,7 @@
 @media (max-width: 375px) {
     .navbar{
         padding: 0; 
-        margin: 10px; 
-    }
-    .lodging_item{
-        max-width: 335px;
-        margin:0;
+        margin: 20px; 
     }
     
     .navbar img{
@@ -43,7 +42,6 @@
         
     }
     .item{
-        font-weight: 500;
         font-size: 12px;
         margin-right: 10px;    
     }
