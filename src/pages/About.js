@@ -1,12 +1,13 @@
 import Background from '../components/Background'
-import Container from '../components/Container'
 import DropDown from '../components/DropDown'
+import styles from '../styles/pages/About.module.css'
 
 function About() {
+    document.title= "Kasa - A propos de nous"
     return(
-        <Container customClass="column">
+        <main>
             <Background customClass="imgBackgroundAbout"/>
-            <section>
+            <section className={styles.section}>
                 <DropDown
                     title="Fiabilité"
                     text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
@@ -24,7 +25,7 @@ function About() {
                     text="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
                 />
             </section>     
-        </Container>
+        </main>
         
     )
 }

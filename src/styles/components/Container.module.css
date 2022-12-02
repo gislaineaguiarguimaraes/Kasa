@@ -1,7 +1,16 @@
+.body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     max-width: 1240px; 
+    min-width: 335px;
     margin: auto;
 }
 
@@ -9,12 +18,6 @@
     min-height: 85vh;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 @media (max-width: 375px) {
     .container{

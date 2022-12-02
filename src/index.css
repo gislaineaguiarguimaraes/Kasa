@@ -11,15 +11,6 @@ html, body{
 
 #root{
   margin: 0 auto;
-  background-color:#FFFFFF;
-  max-width: 1440px;
-  height: 100vh; 
+  background-color:#FFFFFF; 
 }
-@media (max-width: 375px) {
-  #root{
-    margin: 0 auto;
-    width: 375px;
-    height: 100%; 
-    
-  }
-}
+

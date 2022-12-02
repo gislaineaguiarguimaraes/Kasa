@@ -23,7 +23,7 @@ function DropDown({title, text}) {
         
     }
     return(
-        <article className={styles.divArticle} >
+        <article className={styles.article} >
             <div className={styles.coll_header} onClick={handleClick}>
                 <p>{title}</p>
                 <Arrow/>

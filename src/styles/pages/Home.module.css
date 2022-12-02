@@ -1,6 +1,5 @@
 .section_lodging{
-    max-width: 1240px;
-    margin: auto;
+    width: 100%;
     background-color: #F7F7F7;
     box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.349);
     border-radius: 25px;
