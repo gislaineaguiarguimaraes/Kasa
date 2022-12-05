@@ -1,6 +1,19 @@
+import { useParams } from 'react-router-dom';
+import DropDown from '../components/DropDown'
+
 function Lodging() {
+    document.title="Kasa - Logement"
+    let id = useParams();
     return(
-        <h1>Lodging</h1>
+        <main>
+            <DropDown
+            title="Description"
+            text=""
+            
+            />
+
+        </main>
+    
     )
 }
 

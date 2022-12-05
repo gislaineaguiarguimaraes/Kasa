@@ -1,13 +1,17 @@
 //Fonction pour créer chaque card de chaque logement. Cette function sera appelé dans la poge home
 import styles from '../styles/components/Card.module.css'
+import { Link } from 'react-router-dom'
 //La fonction recevra les props du fichier Home.js
-function Card({id,cover, title}){
+function Card({lodging}){
+    console.log(lodging)
+    console.log(lodging.title)
     return(
         //Et retournera une liste avec une image et le titre.
-        <li key={id} className={styles.lodging_item}>
-            {console.log(id)}
-            <img src={cover} alt={`${title} cover`}/>
-            <p>{title}</p>
+        <li  className={styles.lodging_item} >
+            <Link to={`/lodging/${lodging.id}`} >
+                <img src={lodging.cover} alt={`${lodging.title} cover`}/>
+                <p>{lodging.title}</p>
+            </Link>
         </li>
     )
 }

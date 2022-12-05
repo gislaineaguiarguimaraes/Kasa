@@ -1,5 +1,5 @@
 import styles from '../styles/pages/Home.module.css'
-import {lodgingList} from '../datas/lodgingList'
+import lodgingList from '../datas/lodgingList'
 import Card from '../components/Card'
 import Background from '../components/Background'
 
@@ -11,11 +11,10 @@ function Home() {
             <Background customClass="imgBackgroundHome"/>
             <section className={styles.section_lodging}>
                 <ul className={styles.lodging_list}>
-                    {lodgingList.map(({ id, cover, title }) => (
+                    {lodgingList.map((lodging) => (
                         <Card
-                            id={id}
-                            cover={cover}
-                            title={title}
+                            key={lodging.id}
+                            lodging={lodging}
                         />
                     ))}
                 </ul>

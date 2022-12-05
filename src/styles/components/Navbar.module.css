@@ -2,7 +2,7 @@
     max-width: 1240px;
     display: flex;
     justify-content: space-between;
-    padding: 40px ; 
+    padding: 40px 0; 
     margin: 20px auto; 
 }
 
@@ -19,7 +19,7 @@
 .item{
     font-weight: 500;
     font-size: 24px;
-    margin-right: 40px;    
+    margin-left: 40px;    
 }
 
 .item a{
@@ -31,18 +31,34 @@
     text-decoration: underline;
 }
 
+@media (max-width: 1255px){
+    .navbar {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 650px){
+    .navbar img{
+        width: 160px;
+    }
+    .item{
+        font-size: 18px;      
+    }
+}
+
 @media (max-width: 375px) {
     .navbar{
         padding: 0; 
-        margin: 20px; 
+        margin: 20px ; 
     }
     
     .navbar img{
-        width: 145px;
-        
+        width: 145px;  
     }
     .item{
         font-size: 12px;
-        margin-right: 10px;    
+        margin-left: 10px; 
+        margin-right: 5px;  
+        text-transform: uppercase; 
     }
 }
