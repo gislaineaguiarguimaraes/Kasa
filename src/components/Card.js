@@ -3,8 +3,6 @@ import styles from '../styles/components/Card.module.css'
 import { Link } from 'react-router-dom'
 //La fonction recevra les props du fichier Home.js
 function Card({lodging}){
-    console.log(lodging)
-    console.log(lodging.title)
     return(
         //Et retournera une liste avec une image et le titre.
         <li  className={styles.lodging_item} >
