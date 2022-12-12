@@ -14,22 +14,15 @@ function DropDown({title, text}) {
             setDisplay('none')
         }
     }
-    function Arrow(){
-        if(display === 'none'){
-            return(<img className={`${styles.menu_arrow}${styles.menu_arrow_down}`} src={vector} alt="Icone pour ouvrir et fermer le menu"/>)
-        }else{
-            return(<img className={`${styles.menu_arrow} ${styles.menu_arrow_open}`} src={vector} alt="Icone pour ouvrir et fermer le menu"/>)
-        }
-        
-    }
+    
     return(
         <article className={styles.article} >
             <div className={styles.coll_header} onClick={handleClick}>
                 <p>{title}</p>
-                <Arrow/>
+                <img className={display === 'none' ? styles.menu_arrow_down :  styles.menu_arrow_open} src={vector} alt="Icone pour ouvrir et fermer le menu"/>
             </div>
-            <div className={styles.coll_content} style={{display:display}}>
-                <p className={styles.coll_item}>{text}</p>
+            <div className={display === 'none' ? styles.coll_content : styles.coll_content + ' ' + styles.animated} style={{display:display}}>
+                <p className={`${styles.coll_item} ${styles.animated}`}>{text}</p>
             </div>
         </article>
     )  
