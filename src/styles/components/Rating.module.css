@@ -1,5 +1,21 @@
+.rating{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
 .rating i{
     font-size: 24px;
-    color: #E3E3E3;
+    margin-right: 5px;
+}
 
+@media (max-width: 375px){
+    .rating{
+        margin-top: 10px;
+    }
+    .rating i{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    
 }

@@ -4,6 +4,8 @@ import lodgingList from '../datas/lodgingList.json'
 import Carousel from '../components/Carousel';
 import styles from '../styles/pages/Lodging.module.css'
 import Rating from '../components/Rating';
+import Tag from '../components/Tag';
+
 
 
 function Lodging() {
@@ -11,22 +13,33 @@ function Lodging() {
     let lodging = lodgingList.find(function(lodging){
         return lodging.id === id.id
     })
-    /*let equipments = lodging.equipments.replace(',','\n')
-    console.log(lodging)
-    console.log(equipments)*/
+    
     document.title="Kasa - Logement"
     return(
         <main>
             <Carousel images={lodging.pictures}/>
-            <Rating numStars={lodging.rating}/>
-            <div className={styles.content}>
+            <div className= {styles.contentInfo}>
+                <div className={styles.info}>
+                    <h1>{lodging.title}</h1>
+                    <h2>{lodging.location}</h2>
+                    <Tag tag={lodging.tags}/>
+                </div>
+                <div className={styles.content_host}>
+                    <div className={styles.host}>
+                        <span>{lodging.host.name}</span>
+                        <img src={lodging.host.picture} alt=' '/>
+                    </div>
+                    <Rating rating={lodging.rating}/>
+                </div>
+            </div>
+            <div className={styles.contentDropDown}>
                 <DropDown
                 title="Description"
-                text={lodging.description}
+                props={lodging.description}
                 />
                 <DropDown
                 title="Equipments"
-                text={lodging.equipments}
+                props={lodging.equipments}
                 />
             </div>
         </main>

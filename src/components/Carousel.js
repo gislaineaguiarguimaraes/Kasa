@@ -1,7 +1,9 @@
+//Importer useState pour suivre l'état d'un composant
 import { useState } from 'react'
 import styles from '../styles/components/Carousel.module.css'
 
 const Carousel = ({ images }) => {
+    //Déclarer les variables, une pour l'état actuel et autre pour mettre à jour l'état (current, setCurrent)
     const [current, setCurrent] = useState(0)
     const length = images.length
     const nextSlide = () => {
@@ -10,6 +12,7 @@ const Carousel = ({ images }) => {
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
+    //Si la props n'est pas un array ou si la liste est vide, retourne null
     if (!Array.isArray(images) || images.length <= 0) {
         return null;
       }
@@ -36,25 +39,7 @@ const Carousel = ({ images }) => {
             </div>
             <div className={styles.background}/>
         </section>
-        
-        /*<section className={styles.carousel_container}>
-            <div className={styles.carousel}>
-                {images.map((img, index) => (
-                    <div className={`${styles.slide} ${index === current ? styles.slider_actve : styles.slider}`} key={index}>
-                        <img src={img} alt=" "/>
-                    </div> 
-                ))}
-                
-            </div> 
-            <button className={`${styles.arrow} ${styles.left_arrow}`}>
-                <i className="fa-solid fa-chevron-left" alt="arrow back"></i>
-            </button>
-            
-            <button className={`${styles.arrow} ${styles.right_arrow}`}>
-                <i className="fa-solid fa-chevron-right" alt="arrow forward"></i>
-            </button>
-        </section>*/
-        
+          
     )
 }
 

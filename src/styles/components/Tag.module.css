@@ -1,0 +1,27 @@
+.container_tag{
+    margin-top: 30px;
+}
+
+.tag{
+    background-color: #FF6060;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 35px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 375px){
+    .container_tag{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+    .tag{
+        font-size: 10px;
+        margin-top: 10px;
+        padding: 3px 25px;
+    }
+    
+}
