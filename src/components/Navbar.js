@@ -1,4 +1,4 @@
-//<Link> est utilisé pour définir l'URL et garder une trace de l'historique de navigation. Pour établir un lien vers un chemin interne, nous utiliserons <Link> a la  place de <a href="">.
+//Link est utilisé pour etablir un chemin interne
 import {Link} from 'react-router-dom'
 import styles from '../styles/components/Navbar.module.css'
 import logo from '../images/logo.svg'

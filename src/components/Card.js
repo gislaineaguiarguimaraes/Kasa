@@ -1,4 +1,4 @@
-//Fonction pour créer chaque card de chaque logement. Cette function sera appelé dans la poge home
+//Fonction pour créer les cards des logements. Cette function sera appelé dans la poge home
 import styles from '../styles/components/Card.module.css'
 import { Link } from 'react-router-dom'
 //La fonction recevra les props du fichier Home.js

@@ -1,5 +1,6 @@
 import styles from '../styles/components/Rating.module.css'
 
+//Fonction qui recevra en paramètre le nombre d'étoiles que possède chaque logement
 function Rating({rating}) {
     const stars = []
     const star = (<i style={{color:"#FF6060"}}className="fa-solid fa-star star" ></i> )
@@ -9,11 +10,12 @@ function Rating({rating}) {
     const numEmptyStar =  5 - numRating
     
     console.log(numEmptyStar)
+    //Insère dans l'array stars le nombre correspondantes d'étoiles colorées 
     for(let c = 0; c < numRating; c ++){
          stars.push(star)
          
     }
-
+    //insère le nombre d'étoiles grises restantes pour compléter 5
     for(let c = 0; c < numEmptyStar; c ++){
         stars.push(emptyStar)
     }

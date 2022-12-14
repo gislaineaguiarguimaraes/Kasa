@@ -1,14 +1,16 @@
 //Importer useState pour suivre l'état d'un composant
 import { useState } from 'react'
 import styles from '../styles/components/Carousel.module.css'
-
+//La fonction recevra la liste des images présentes dans le fichier json
 const Carousel = ({ images }) => {
     //Déclarer les variables, une pour l'état actuel et autre pour mettre à jour l'état (current, setCurrent)
     const [current, setCurrent] = useState(0)
     const length = images.length
+    //Fonction anonyme pour passer à l'image suivante
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
+    //Fonction anonyme pour revenir à l'image précédente
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }

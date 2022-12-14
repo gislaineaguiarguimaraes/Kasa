@@ -1,3 +1,4 @@
+//Importer Link pour lier le logo à la page principale
 import { Link } from 'react-router-dom'
 import Logo from '../images/logo.svg'
 import styles from '../styles/components/Footer.module.css'
