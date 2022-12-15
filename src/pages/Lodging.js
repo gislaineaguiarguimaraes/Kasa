@@ -33,14 +33,18 @@ function Lodging() {
                 </div>
             </div>
             <div className={styles.contentDropDown}>
-                <DropDown
-                title="Description"
-                props={lodging.description}
-                />
-                <DropDown
-                title="Equipments"
-                props={lodging.equipments}
-                />
+                <div className={styles.dropDownDescription}>
+                    <DropDown
+                    title="Description"
+                    props={lodging.description}
+                    />
+                </div>
+                <div className={styles.dropDownEquipments}>
+                    <DropDown
+                    title="Equipments"
+                    props={lodging.equipments}
+                    />
+                </div>
             </div>
         </main>
     

@@ -16,7 +16,7 @@ function DropDown({title, props}) {
     useEffect(() => {
         setHeightEl(`${refHeight.current.scrollHeight}px`);
     }, []);
-    console.log(refHeight.current.scrollHeight)
+    
     //Fonction onClick pour afficher le display
     function handleClick() {
         if(display === 'none') {
@@ -29,7 +29,7 @@ function DropDown({title, props}) {
     const displayText = () => {
         if(typeof props === "object"){
             return(
-                <ul>
+                <ul className={styles.containerList}>
                     {props.map((item, index) => (
                         <li key={index} className={styles.list}>{item}</li>
                     )
@@ -37,7 +37,7 @@ function DropDown({title, props}) {
                 </ul>
             )
         }else{
-            return <p>{props}</p>
+            return <p className={styles.text}>{props}</p>
         }
     }
     return(

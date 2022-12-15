@@ -9,9 +9,20 @@
     justify-content: space-between;
 }
 .contentDropDown {
+    width: 100%;
     display: flex;
-    gap: 70px;
-    font-size: 18px;  
+    justify-content: space-between;
+    font-size: 18px; 
+    
+}
+
+.dropDownDescription{
+    width: 50%;
+    margin-right: 70px;
+}
+
+.dropDownEquipments{
+    width: 50%;
 }
 
 .info h1{
