@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 .contentDropDown {
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     font-size: 18px; 
@@ -56,25 +56,56 @@
     font-size: 18px;
     color:#FF6060;
 }
-
-@media (max-width: 375px) {
-    .contentInfo{
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        
+@media (max-width: 1255px){
+    .contentInfo {
+        width: 90%;
+        margin: 20px auto;
     }
+    .contentDropDown {
+        width: 90%;  
+        margin: 30px auto;  
+    }
+    .contentDropDown article{
+        width: 100%;
+        margin: 0px;
+    }
+}
+@media (max-width: 850px) {
     .contentDropDown{
         flex-direction: column;
-        gap: 5px;
+        width: 90%;
     }
-    
+    .dropDownDescription{
+        width: 100%;  
+    }
+    .dropDownEquipments{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .info h1{
+        font-size: 26px;
+    }
+    .info h2{
+        font-size: 16px;
+    }
+}
+@media (max-width: 375px) {
+    .contentInfo{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 15px;  
+    }
     .info h1{
         font-size: 18px;
     }
     .info h2{
         font-size: 14px;
     }
+    .contentDropDown{
+        width: 100%;
+    }
+    
     .content_host{
         display: flex;
         justify-content: space-between;

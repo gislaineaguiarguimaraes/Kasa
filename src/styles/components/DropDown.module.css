@@ -5,7 +5,7 @@
     background: #F7F7F7;
     border-radius: 10px;
     box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.299);
-    
+    margin: 10px auto;  
 }
 
 .coll_header {
@@ -20,8 +20,7 @@
     color: white;
     cursor: pointer;
     font-weight: 500;  
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
 
 .coll_content {
@@ -51,14 +50,18 @@
 
 .menu_arrow_down {
 transform: rotate(0deg);
-
 }
 
 .menu_arrow_open {
 transform: rotate(180deg);
-
 }
-/*END*/
+
+@media (max-width: 1255px){
+    .article{
+        width: 90%;
+    }
+}
+
 @media (max-width: 375px) {
     .article{
         width: 335px;
@@ -70,6 +73,7 @@ transform: rotate(180deg);
         height: 100%;
         padding: 8px;
         font-size: 13px;
+        border-radius: 5px;
     }
     .coll_content {
         font-size: 12px;

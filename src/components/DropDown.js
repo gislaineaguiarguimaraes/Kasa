@@ -3,7 +3,7 @@
 //useRef peut être utilisé pour accéder directement à un élément DOM
 import {useState, useRef, useEffect} from 'react'
 import styles from '../styles/components/DropDown.module.css'
-import vector from '../images/vector.png'
+import vector from '../images/arrow.png'
 
 function DropDown({title, props}) {
     //Const pour suivre le changement d'état du display (ouverture et fermeture)
