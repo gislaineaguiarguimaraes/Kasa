@@ -11,7 +11,12 @@
     height: 100%;
     overflow: hidden;
 }
-
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
 .image{
     height: 100%;
     width: 100%;
@@ -33,13 +38,13 @@
 .slide {
     opacity: 0;
     transition: all;
-    transition-duration: 1s ease;
+    transition-duration: 0.5s ease;
 }
 
 .active {
     width: 100%;
     opacity: 1;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transform: scale(1);
 }
 

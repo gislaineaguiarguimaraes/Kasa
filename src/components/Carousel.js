@@ -21,14 +21,16 @@ const Carousel = ({ images }) => {
     return (
         <section className={styles.section}>
             <div className={styles.slider}>
-                <button className={`${styles.arrow} ${styles.left_arrow}`} onClick={prevSlide} >
-                    <i className="fa-solid fa-chevron-left" alt="arrow back"></i>
-                </button>
-                
-                <button className={`${styles.arrow} ${styles.right_arrow}`} onClick={nextSlide}>
-                    <i className="fa-solid fa-chevron-right" alt="arrow forward"></i>
-                </button>
-                <p>{`${current + 1}/${length}`}</p>
+                <div className={length === 1 ? styles.none : styles.block}>
+                    <button className={`${styles.arrow} ${styles.left_arrow}`} onClick={prevSlide} >
+                        <i className="fa-solid fa-chevron-left" alt="arrow back"></i>
+                    </button>
+                    
+                    <button className={`${styles.arrow} ${styles.right_arrow}`} onClick={nextSlide}>
+                        <i className="fa-solid fa-chevron-right" alt="arrow forward"></i>
+                    </button>
+                    <p>{`${current + 1}/${length}`}</p>
+                </div>
                 {images.map((img, index) => {
                     return (
                         <div className={index === current ? styles.slide +' '+ styles.active : styles.slide} key={index}>

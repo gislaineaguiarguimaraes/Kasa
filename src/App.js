@@ -18,6 +18,7 @@ function App() {
             <Route path = "/about" element= {<About/>} />  
             <Route path = "/lodging/:id" element= {<Lodging/>} />  
             <Route path = "*" element= {<Error/>} />  
+            <Route path = "/404" element= {<Error/>} />  
           </Routes>
         </Container>
       </Router>

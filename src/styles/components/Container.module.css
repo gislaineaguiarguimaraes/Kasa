@@ -11,6 +11,7 @@
     flex-direction: column;
     max-width: 1240px; 
     min-width: 335px;
+    min-height: 85vh;
     margin: auto;
 }
 
@@ -23,7 +24,8 @@
     .container{
         display: flex;
         justify-content: space-between;
-        max-width: 335px; 
+        max-width: 335px;
+        min-height: 85vh; 
         margin: auto;
     }
     
