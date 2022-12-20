@@ -20,7 +20,7 @@ function Lodging() {
         return <Navigate to="/404"/>
     }else {
         return(
-            <main>
+            <main className={styles.main}>
                 <Carousel images={lodging.pictures}/>
                 <div className= {styles.contentInfo}>
                     <div className={styles.info}>

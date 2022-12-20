@@ -7,7 +7,7 @@ import Background from '../components/Background'
 function Home() {
     document.title="Kasa - Page d'accueil"
     return(
-        <main>
+        <main className={styles.main}>
             <Background customClass="imgBackgroundHome"/>
             <section className={styles.section_lodging}>
                 <ul className={styles.lodging_list}>

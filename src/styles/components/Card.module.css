@@ -34,7 +34,7 @@
     text-decoration: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .lodging_item {
         max-width: 335px;
         height: 255px;

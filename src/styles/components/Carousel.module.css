@@ -85,7 +85,11 @@
         margin: auto;
     }
 }
-
+@media (max-width: 850px){
+    .section{
+        height: 355px;
+    }
+}
 @media (max-width: 375px){
     .section{
         width: 100%;
@@ -93,6 +97,7 @@
     }
     .slider p {
         font-size: 15px;
+        display: none;
     }
     .arrow{
         font-size: 20px;

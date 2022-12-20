@@ -5,7 +5,7 @@ import styles from '../styles/pages/About.module.css'
 function About() {
     document.title= "Kasa - A propos de nous"
     return(
-        <main>
+        <main className={styles.main}>
             <Background customClass="imgBackgroundAbout"/>
             <section className={styles.section}>
                 <DropDown

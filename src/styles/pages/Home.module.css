@@ -1,3 +1,7 @@
+.main{
+    margin-bottom: 300px;
+}
+
 .section_lodging{
     width: 100%;
     background-color: #F7F7F7;
@@ -5,6 +9,7 @@
     border-radius: 25px;
     padding: 20px;
     flex-wrap: wrap;
+    margin-bottom: 300px;
 }
 
 .lodging_list{
@@ -24,7 +29,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .section_lodging{
         width: 335px;
         padding: 0;

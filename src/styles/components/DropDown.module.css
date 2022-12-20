@@ -61,6 +61,11 @@ transform: rotate(180deg);
         width: 90%;
     }
 }
+@media (max-width: 750px){
+    .text{
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 375px) {
     .article{
