@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       {/*Englober l'intégralité du projet dans le Routeur */}
       <Router>
-        <Container customClass="min_height">
+        <Container>
           <Routes>
             <Route path = "/" exact element= {<Home/>} />  
             <Route path = "/about" element= {<About/>} />  

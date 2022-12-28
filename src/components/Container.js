@@ -6,7 +6,7 @@ function Container(props) {
     return (
         <div className={styles.body}>
             <Navbar/>
-            <div className={`${styles.container} ${styles[props.customClass]}`}>
+            <div className={styles.container}>
                 {props.children}
             </div>
             <Footer/>
