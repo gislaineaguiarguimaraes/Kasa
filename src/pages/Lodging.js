@@ -15,7 +15,6 @@ function Lodging() {
     })
  
     document.title="Kasa - Logement"
-    console.log(!lodging)
     if(!lodging){
         return <Navigate to="/404"/>
     }else {

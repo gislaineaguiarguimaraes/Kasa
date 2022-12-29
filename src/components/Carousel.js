@@ -8,10 +8,12 @@ const Carousel = ({ images }) => {
     const length = images.length
     //Fonction anonyme pour passer à l'image suivante
     const nextSlide = () => {
+        //Si la valeur de current est égale à length -1 (Cela signifie que nous sommes dans la dernière image) courant gagne 0 et relance la liste des images, sinon current gagne +1 et passe à la prochaine image
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
     //Fonction anonyme pour revenir à l'image précédente
     const prevSlide = () => {
+        //Si courant est = 0 (ce qui signifie que nous sommes dans la première image), longueur obtient -1 (longueur -1 est la même chose que la dernière image), sinon courant obtient -1 et retourne une image
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
     //Si la props n'est pas un array ou si la liste est vide, retourne null

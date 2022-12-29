@@ -8,8 +8,6 @@ function Rating({rating}) {
     
     const numRating = Number(rating)
     const numEmptyStar =  5 - numRating
-    
-    console.log(numEmptyStar)
     //Insère dans l'array stars le nombre correspondantes d'étoiles colorées 
     for(let c = 0; c < numRating; c ++){
          stars.push(star)
